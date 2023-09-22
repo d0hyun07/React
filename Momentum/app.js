@@ -36,25 +36,69 @@
 // player.lastName = "potato";
 // console.log(player);
 
-function sayHello(){
-  console.log("Hello!");
-}
+// function sayHello(){
+//   console.log("Hello!");
+// }
 
-sayHello();
+// sayHello();
 
-function sayHello(nameOfPerson, age){
-  console.log(nameOfPerson);
-}
+// function sayHello(nameOfPerson, age){
+//   console.log(nameOfPerson);
+// }
 
-sayHello("nico", 10);
-sayHello("dal", 23);
-sayHello("lynn", 21);
+// sayHello("nico", 10);
+// sayHello("dal", 23);
+// sayHello("lynn", 21);
 
-const player = {
-  name: "nico";
-  sayHello: function (otherPersonName) {
-    console.log("hello "+ otherPersonName);
+// const player = {
+//   name: "nico";
+//   sayHello: function (otherPersonName) {
+//     console.log("hello "+ otherPersonName);
+//   },
+// }
+
+// player.otherPersonName("nico");
+
+// const calculator = {
+//   plus: function (a,b){
+//     alert(a+b);
+//   },
+//   minus: function (a,b){
+//     alert(a-b); 
+//   },
+//   times: function (a,b){
+//     alert(a*b);
+//   },
+//   divide: function (a,b){
+//     alert(a/b);
+//   },
+//   power: function (a,b){
+//     alert(a**b);
+//   },
+// }
+
+const calculator = {
+  plus: function (a,b){
+    return a+b;
+  },
+  minus: function (a,b){
+    return a-b; 
+  },
+  times: function (a,b){
+    return a*b;
+  },
+  divide: function (a,b){
+    return a/b;
+  },
+  power: function (a,b){
+    return a**b;
   },
 }
 
-player.otherPersonName("nico");
+const a = calculator.power(4,5);
+
+console.log(a);
+
+const age = prompt("How old are you?");
+parseInt(age);
+console.log(typeof age);
