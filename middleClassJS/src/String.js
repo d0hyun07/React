@@ -18,13 +18,13 @@
 
 // 금칙어 : 콜라
 
-function hasCola(str) {
-  if (str.indexOf("콜라")>-1) {
-    console.log("금칙어가 있습니다.");
-  }else{
-    console.log("통과");
-  }
-}
+// function hasCola(str) {
+//   if (str.indexOf("콜라")>-1) {
+//     console.log("금칙어가 있습니다.");
+//   }else{
+//     console.log("통과");
+//   }
+// }
 
-hasCola("사이다가 짱이야!");
-hasCola("콜라가 짱이야!");
+// hasCola("사이다가 짱이야!");
+// hasCola("콜라가 짱이야!");
