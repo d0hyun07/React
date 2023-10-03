@@ -47,21 +47,29 @@
 
 // join, split
 
-let arr = ["안녕", "나는", "철수야"];
+// let arr = ["안녕", "나는", "철수야"];
 
-let result = arr.join(" ");
+// let result = arr.join(" ");
 
-console.log(result);
+// console.log(result);
 
-let user = {
-  name: "Mike",
-  age: 30,
-};
+// let user = {
+//   name: "Mike",
+//   age: 30,
+// };
 
-let userList = ["Mike", "Tom", "Jane"];
+// let userList = ["Mike", "Tom", "Jane"];
 
-console.log(typeof user);
-console.log(typeof userList);
+// console.log(typeof user);
+// console.log(typeof userList);
 
-console.log(Array.isArray(user));
-console.log(Array.isArray(userList));
+// console.log(Array.isArray(user));
+// console.log(Array.isArray(userList));
+
+
+let arr = [27,8,5,13];
+
+arr.sort();
+
+console.log(arr);
+
