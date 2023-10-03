@@ -67,9 +67,9 @@
 // console.log(Array.isArray(userList));
 
 
-let arr = [27,8,5,13];
+// let arr = [27,8,5,13];
 
-arr.sort();
+// arr.sort();
 
-console.log(arr);
+// console.log(arr);
 
