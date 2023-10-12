@@ -1,21 +1,26 @@
-import Welcome from './Welcome';
 import {useState} from "react";
+import UserName from "./UserName";
 
-export default function Hello() {
-  // let name = "Mike";
+export default function Hello({age}) {
   const [name, setName] = useState('Mike');
+  // const [age, setAge] = useState(props.age);
+  const msg = age >19 ? "성인 입니다." : "미성년자 입니다."; 
 
-  function changeName() {
-    const newName = name === "Mike" ? "Jane" : "Mike";
-    // console.log(name);
-    // document.getElementById("name").innerText = name;
-    setName(newName);
-  }
   return (
     <div>
-      <h1>state</h1>
-      <h2 id="name">{name}</h2>
-      <button onClick={changeName}>Change</button>
+      <h2 id="name">
+        {name}({age}) : {msg}
+      </h2>
+      <UserName name={name} />
+      <button 
+        onClick={() => {
+          setName(name === "Mike" ? "Jane" : "Mike");
+          // setAge(age + 1);
+        }}
+      >
+          
+        Change
+      </button>
     </div>
   );
 };
