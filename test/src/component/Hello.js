@@ -1,28 +1,21 @@
 import Welcome from './Welcome';
+import {useState} from "react";
 
 export default function Hello() {
-  function showName() {
-    console.log("Mike");
-  }
-  function showAge(age) {
-    console.log(age);
-  }
-  function showText(e) {
-    console.log();
+  // let name = "Mike";
+  const [name, setName] = useState('Mike');
+
+  function changeName() {
+    const newName = name === "Mike" ? "Jane" : "Mike";
+    // console.log(name);
+    // document.getElementById("name").innerText = name;
+    setName(newName);
   }
   return (
     <div>
-      <h1>Hello</h1>
-      <button onClick={showName()}>Show name</button>
-      <button 
-      onClick={() => {
-          showAge(30);
-        }
-      }>
-        Show age
-      </button>
-      <Welcome />
-      <input type="text" onChange={showText}/>
+      <h1>state</h1>
+      <h2 id="name">{name}</h2>
+      <button onClick={changeName}>Change</button>
     </div>
   );
 };
